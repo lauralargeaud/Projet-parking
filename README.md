@@ -14,6 +14,8 @@ model.train(data="/content/Projet-parking/data/dataset.yaml", epochs=50, imgsz=6
          Place_Occupée          6        184      0.857      0.751      0.802      0.357
 
 
+model.train(data="/content/Projet-parking/data/dataset.yaml", epochs=50, imgsz=640, batch=16, degrees = 90)
+
 model.train(data="/content/Projet-parking/data/dataset.yaml", epochs=50, imgsz=640, batch=16, hsv_h=0.03,hsv_s = 0.6, hsv_v = 0.5, translate = 0.25, scale = 0.5, bgr = 1, erasing = 0.4)
                  Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  7.18it/s]
 
